@@ -9,5 +9,14 @@
     <h3>
         This is User List
     </h3>
+
+    @php
+        print_r($user)
+    @endphp
+
+    <br/>
+
+    {{ print_r($user) }}
+
 </body>
 </html>

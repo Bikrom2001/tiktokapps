@@ -7,7 +7,13 @@ Route::get('/', function () {
 });
 
 Route::get("/user", function(){
-    return view('user');
+
+    $user =[
+        'name' => 'Bikrom Roy',
+        'email' => 'bikromroy2001@gmail.com'
+    ];
+
+    return view('user', compact('user'));
 });
 
 
