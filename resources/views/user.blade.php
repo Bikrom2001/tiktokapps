@@ -12,6 +12,8 @@
     
     <hr>
 
+    {{-- Then maigrate for user table for data base Command this "php artisan migrate" --}}
+
     <table border="1" width='50%' cellpadding="10" cellspacing="0">
     <thead>
         <tr>
