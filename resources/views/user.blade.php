@@ -30,8 +30,8 @@
         @foreach ($users as $key => $user)
             <tr>
                 <td>{{ $key + 1 }}</td>
-                <td>{{ $user['name'] }}</td>
-                <td>{{ $user['email'] }}</td>
+                <td>{{ $user-> name }}</td>
+                <td>{{ $user->email }}</td>
                 <td>
                     <a href="">Edit</a>
                     <a href="">Delete</a>

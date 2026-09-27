@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     public function showUser(){
-        return $users = User::get();
+        $users = User::get();
 
         return view('user', compact('users'));
     }
