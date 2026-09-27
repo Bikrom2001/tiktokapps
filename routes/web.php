@@ -1,20 +1,13 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/user", function(){
-
-    $user =[
-        'name' => 'Bikrom Roy',
-        'email' => 'bikromroy2001@gmail.com'
-    ];
-
-    return view('user', compact('user'));
-});
+Route::get("/user", [UserController::class, 'showUser']);
 
 
 Route::get("/contact", function(){
