@@ -14,6 +14,8 @@
 
     {{-- Then maigrate for user table for data base Command this "php artisan migrate" --}}
 
+    {{-- Now amra database -> "factories" theke user fake data crate korbo and "seeders" theke comment out korbo. amader command hoybe "php artisan db:seed"  --}}
+
     <table border="1" width='50%' cellpadding="10" cellspacing="0">
     <thead>
         <tr>
