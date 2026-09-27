@@ -12,9 +12,32 @@
     
     <hr>
 
-    @foreach ($users as $user)
-        <h2>User Name: {{ $user}}</h2>
-    @endforeach
+    <table border="1" width='50%' cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>SL</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach ($users as $key => $user)
+            <tr>
+                <td>{{ $key + 1 }}</td>
+                <td>{{ $user['name'] }}</td>
+                <td>{{ $user['email'] }}</td>
+                <td>
+                    <a href="">Edit</a>
+                    <a href="">Delete</a>
+                </td>
+            </tr>
+        @endforeach
+    </tbody>
+</table>
+
+   
 
     
 
