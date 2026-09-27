@@ -9,14 +9,14 @@
     <h3>
         This is User List
     </h3>
+    
+    <hr>
 
-    @php
-        print_r($user)
-    @endphp
+    @foreach ($users as $user)
+        <h2>User Name: {{ $user}}</h2>
+    @endforeach
 
-    <br/>
-
-    {{ print_r($user) }}
+    
 
 </body>
 </html>
